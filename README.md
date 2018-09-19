@@ -4,6 +4,7 @@ reference only.
 
 RFC 862
 *******
+```text
 Network Working Group                                          J. Postel
 Request for Comments: 862                                            ISI
                                                                 May 1983
@@ -36,4 +37,4 @@ UDP Based Echo Service
    UDP.  A server listens for UDP datagrams on UDP port 7.  When a
    datagram is received, the data from it is sent back in an answering
    datagram.
-
+```
