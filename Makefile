@@ -7,16 +7,16 @@
 AR      := ar
 CC      := gcc
 CFLAGS  := -I./include -O3
-WFLAGS	:= -Wall -Wextra -pedantic -std=iso9899:1990 -ansi
-NAME	:= echo
-DNAME	:= $(NAME)d
-SHELL	:= /bin/sh
-SRCDIR	:= src
-INCDIR	:= include
+WFLAGS  := -Wall -Wextra -pedantic -std=iso9899:1990 -ansi
+NAME    := echo
+DNAME   := $(NAME)d
+SHELL   := /bin/sh
+SRCDIR  := src
+INCDIR  := include
 SRC_DIRS:= $(SRCDIR)/
-C_SRCS	:= $(notdir $(wildcard $(addsuffix *.c,$(SRC_DIRS))))
-OBJECTS	:= $(patsubst %.c,%.o,$(C_SRCS))
-VPATH	:= $(SRC_DIRS)
+C_SRCS  := $(notdir $(wildcard $(addsuffix *.c,$(SRC_DIRS))))
+OBJECTS := $(patsubst %.c,%.o,$(C_SRCS))
+VPATH   := $(SRC_DIRS)
 
 .PHONY: all
 all: $(DNAME)
